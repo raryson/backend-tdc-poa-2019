@@ -16,4 +16,9 @@ app.post('/talk', (req, res) => {
     res.sendStatus(201)
 })
 
+app.delete('/talk', (req, res) => {
+    talks = []
+    res.sendStatus(202)
+})
+
 app.listen(process.env.PORT || 3000, () => console.log('running at 3000'))
